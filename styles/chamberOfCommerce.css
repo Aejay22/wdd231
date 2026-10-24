@@ -94,7 +94,12 @@ button{
 .hamburger{
     display: none;
 }
-
+.notNull::before{
+    content:"✔️"
+}
+#courseItems .notNull{
+    background-color: orange
+}
 
 @media (max-width: 600px){
     header{

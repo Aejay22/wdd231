@@ -10,12 +10,14 @@ let courses =[
     {
         courseName: "WDD130",
         courseType: "WDD",
-        credit: 2
+        credit: 2,
+        done: "yes"
     },
     {
         courseName: "WDD131",
         courseType: "WDD",
-        credit: 2
+        credit: 2,
+        done: "yes"
 
     },{
         courseName: "WDD231",
@@ -26,13 +28,15 @@ let courses =[
     {
         courseName: "CSE110",
         courseType: "CSE",
-        credit: 2
+        credit: 2,
+        done: "yes"
 
     },
     {
         courseName: "CSE111",
         courseType: "CSE",
-        credit: 2
+        credit: 2,
+        done: "yes"
 
     },
     {
@@ -62,6 +66,9 @@ const populateCourseItems = function(Courses, total = Total){
         courseItems.innerHTML = ""
         Courses.forEach(function(course){
             let div = document.createElement("div");
+            if (course.done != null){
+                div.className = "notNull"
+            }
             div.textContent = course.courseName;
             total += parseInt(course.credit); 
             courseItems.appendChild(div);
