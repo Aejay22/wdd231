@@ -143,4 +143,8 @@ button{
         margin: .3rem;
         background-color: black;
     }
+    header nav.show a:hover{
+        background-color: rgb(40, 37, 37);
+    }
 }
+
