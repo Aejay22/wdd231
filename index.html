@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joshua Uyinosagbon Anthony">
+    <meta name="description" content="This is the home page for the chamber of commerce website for the course WDD231 | WEB FRONTEND DEVELOPMENT I">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/chamberOfCommerce.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="./images/chamber-of-commerce-logo-small.svg" alt="chamber of commerce logo"></a>
+        <a href="#" class="hamburger"></a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati recusandae non odio in quibusdam quaerat eaque tempore ad nemo nam, voluptatem optio nihil praesentium veniam fugit minima totam est dolores aliquam voluptatibus atque iusto? Quidem natus est ex possimus. Hic ex possimus unde perferendis excepturi quaerat earum molestias! Deleniti.</p>
+        </section>
+        
+        <section class="student">
+            <h2>Student Photo</h2>
+            <img src="./images/student.jpeg" alt="Student Photo">
+        </section>
+            
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="button">
+                <button class="all">All</button>
+                <button class="cse">CSE</button>
+                <button class="wdd">WDD</button>
+            </div>
+            <div id="courseItems"></div>
+            <p>The total credit listed above is <span class="courseTotalCount"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="socialMedia">
+            <a href="https://www.linkedin.com/in/joshua-anthony-7717a6394/"><img src="./images/linkdinIcon.webp" alt="linkdinIcon"></a>
+            <a href="https://github.com/aejay22"><img src="./images/githubicon.svg" alt="github Icon"></a>
+            <a href=""><img src="./images/xAppLogo.webp" alt=""></a>
+        </div>
+        <div class="summary">
+            <p>&copy; <span id="currentyear"></span> ⭐ Joshua Uyinosagbon Anthony ⭐ Lagos, Nigeria</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
