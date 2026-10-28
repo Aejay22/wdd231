@@ -1,0 +1,52 @@
+
+@media (max-width: 600px){
+    header{
+        position: relative;
+    }
+    .hamburger::before{
+        content: "☰";
+        font-size: 3rem;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 0rem;
+    }
+    .hamburger.show::before{
+        content: "❌";
+        font-size: 3rem;
+    }
+    header nav{
+        display: none;
+    }
+    header nav.show{
+        display: block;
+        background-color: transparent;
+    }
+    main{
+
+        grid-template-columns: 1fr;
+    }
+    section{
+        grid-column: 1;
+        text-align: center;
+    }
+    #courseItems{
+        display: block;
+    }
+    #courseItems div{
+        margin: .3rem;
+        padding: .3rem;
+    }
+    header nav.show a{
+        display: block;
+        text-align: center;
+        margin: .3rem;
+        background-color: black;
+    }
+    header nav.show a:hover{
+        background-color: rgb(40, 37, 37);
+    }
+}
