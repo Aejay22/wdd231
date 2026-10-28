@@ -27,7 +27,7 @@ main{
     padding: .3rem;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat 1fr 1fr 100%;
+    grid-template-columns: repeat 1fr 1fr 1fr;
 }
 
 section h2{
