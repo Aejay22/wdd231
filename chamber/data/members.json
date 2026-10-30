@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Sunrise Bakery",
+    "address": "12 Market Road, Tkumbu",
+    "phone": "555-123-4501",
+    "website": "https://www.sunrisebakery.example.com",
+    "image": "sunrise-bakery.webp",
+    "membership": 3,
+    "description": "Fresh bread, cakes and pastries baked every morning.",
+    "founded": 2012
+  },
+  {
+    "name": "Tkumbu Tech Hub",
+    "address": "45 Innovation Avenue, Tkumbu",
+    "phone": "555-123-4502",
+    "website": "https://www.tkumbutechhub.example.com",
+    "image": "tech-hub.webp",
+    "membership": 3,
+    "description": "Computer repairs, web design and IT training for small businesses.",
+    "founded": 2018
+  },
+  {
+    "name": "Green Leaf Pharmacy",
+    "address": "8 Health Street, Tkumbu",
+    "phone": "555-123-4503",
+    "website": "https://www.greenleafpharmacy.example.com",
+    "image": "green-leaf-pharmacy.webp",
+    "membership": 2,
+    "description": "Trusted pharmacy with friendly advice and home delivery.",
+    "founded": 2009
+  },
+  {
+    "name": "Golden Crown Hotel",
+    "address": "101 Central Boulevard, Tkumbu",
+    "phone": "555-123-4504",
+    "website": "https://www.goldencrownhotel.example.com",
+    "image": "golden-crown-hotel.webp",
+    "membership": 3,
+    "description": "Comfortable rooms, a restaurant and a conference hall.",
+    "founded": 2005
+  },
+  {
+    "name": "QuickFix Auto Garage",
+    "address": "27 Industrial Way, Tkumbu",
+    "phone": "555-123-4505",
+    "website": "https://www.quickfixauto.example.com",
+    "image": "quickfix-auto.webp",
+    "membership": 2,
+    "description": "Car servicing, tyre replacement and engine diagnostics.",
+    "founded": 2015
+  },
+  {
+    "name": "Bright Minds Academy",
+    "address": "3 School Lane, Tkumbu",
+    "phone": "555-123-4506",
+    "website": "https://www.brightmindsacademy.example.com",
+    "image": "bright-minds-academy.webp",
+    "membership": 1,
+    "description": "Afterschool lessons and exam preparation for students.",
+    "founded": 2020
+  },
+  {
+    "name": "Fresh Farm Market",
+    "address": "60 Harvest Road, Tkumbu",
+    "phone": "555-123-4507",
+    "website": "https://www.freshfarmmarket.example.com",
+    "image": "fresh-farm-market.webp",
+    "membership": 1,
+    "description": "Fruits, vegetables and groceries from local farmers.",
+    "founded": 2017
+  }
+]
