@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(224, 232, 232);
+    width: 100%;
+    min-width: 380px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header, footer{
+    background-color: rgb(169, 193, 183);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+}
+#home img{
+    width: 250px;
+    height: auto;
+}
+header a{
+    text-decoration: none;
+    color: rgb(4, 19, 4);
+}
+.light-dark, footer img{
+    width: 3rem;
+}
+main{
+    width: 80%;
+    margin: .4px auto;
+}
+.gridList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.gridList a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(230, 12, 12);
+    padding: .3rem 1rem;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    margin: .4rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards section{
+    border: 1px solid black;
+    padding: .7rem;
+}
+
+.divThree{
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.divOne{
+    grid-column: 1/2;
+}
+.divTwo{
+    grid-column: 2/4;
+    overflow-wrap: anywhere;
+}
+
+.divThree img{
+    width: 100%;
+    height: auto;
+}
+hr{
+    width: 100%;
+    margin: 10px 0;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+footer section{
+    width: fit-content;
+}
+.hamburger{
+    display: none;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.menu a{
+    margin: 1rem;
+}
+.header-links{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu a:hover{
+    padding: 1rem;
+    background-color: rgb(72, 118, 86);
+}
+@media screen and (max-width: 512px){
+ 
+    .light-dark{
+        margin-right: 1rem;
+
+    }
+    #home{
+        width: 150px;
+    }
+    .header-links{
+        flex-direction: row-reverse;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .hamburger::before{
+        content: "☰";
+    }
+    .hamburger.show::before{
+        content: "✕";
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #home{
+        grid-column: 1/2;
+    }
+    .light-dark{
+        grid-column: 2/3;
+        order: 1;
+    }
+    .hamburger{
+        display: block;
+        font-size: 3rem;
+        grid-column: 3/4;
+        order: 2;
+    }
+    .menu.show{
+        display: block;
+        grid-column: 1/4;
+        order: 3;
+    }
+    .menu.show a{
+        display: block;
+        background-color: rgb(94, 114, 96);
+        color: rgb(30, 31, 29);
+        margin: .3rem;
+        padding: .7rem;
+        border-radius: 1rem;
+    }
+    .menu.show a:hover{
+        background-color: rgb(72, 118, 86);
+    }
+   
+}
+
+
