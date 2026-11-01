@@ -89,3 +89,21 @@ hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("show");
     menu.classList.toggle("show");
 });
+
+const footer = document.querySelector("footer");
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
+
+grid.addEventListener("click", () => {
+    footer.classList.remove("list-view");
+    footer.classList.add("grid-view");
+    cards.classList.remove("list-view");
+    cards.classList.add("grid-view");
+});
+
+list.addEventListener("click", () => {
+    footer.classList.remove("grid-view");
+    footer.classList.add("list-view");
+    cards.classList.remove("grid-view");
+    cards.classList.add("list-view");
+});
