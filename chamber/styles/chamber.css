@@ -7,7 +7,7 @@ body {
     background-color: rgb(224, 232, 232);
     width: 100%;
     min-width: 380px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 header, footer{
@@ -135,67 +135,6 @@ footer.list-view, #cards.list-view{
     flex-direction: column;
     
 
-}
-@media screen and (max-width: 512px){
- 
-    .light-dark{
-        margin-right: 1rem;
-
-    }
-    #home{
-        width: 150px;
-    }
-    .header-links{
-        flex-direction: row-reverse;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .hamburger::before{
-        content: "☰";
-    }
-    .hamburger.show::before{
-        content: "✕";
-    }
-    header{
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    #home{
-        grid-column: 1/2;
-    }
-    .light-dark{
-        grid-column: 2/3;
-        order: 1;
-    }
-    .hamburger{
-        display: block;
-        font-size: 3rem;
-        grid-column: 3/4;
-        order: 2;
-    }
-    .menu.show{
-        display: block;
-        grid-column: 1/4;
-        order: 3;
-    }
-    .menu.show a{
-        display: block;
-        background-color: rgb(94, 114, 96);
-        color: rgb(30, 31, 29);
-        margin: .3rem;
-        padding: .7rem;
-        border-radius: 1rem;
-    }
-    .menu.show a:hover{
-        background-color: rgb(72, 118, 86);
-    }
-   
 }
 
 
