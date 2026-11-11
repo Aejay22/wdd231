@@ -57,5 +57,9 @@
     .menu.show a:hover{
         background-color: rgb(72, 118, 86);
     }
+    .img{
+        width: 130px;
+        height: auto;
+    }
    
 }
