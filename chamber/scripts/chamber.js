@@ -24,9 +24,10 @@ function displayMembers(members){
 
         let image = document.createElement("img");
         image.setAttribute("src", member.image);
-        image.classList.add("grid")
-        image.setAttribute("alt", `image of ${member.name}`);
+        image.setAttribute("alt", `Image of ${member.name}`);
         image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "150");
+        image.setAttribute("height", "100");
         
         
         let email = document.createElement("a");
@@ -85,7 +86,7 @@ const getMembersCards = async (url)=>{
 
 getMembersCards(url);
 
-let hamburger = document.querySelector(".hamburger");
+let hamburger = document.querySelector(".hamburger-menu");
 let menu = document.querySelector(".menu");
 hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("show");
@@ -94,6 +95,7 @@ hamburger.addEventListener("click", ()=>{
 
 const footer = document.querySelector("footer");
 footer.classList.add("list-view");
+
 const grid = document.querySelector("#grid");
 const list = document.querySelector("#list");
 
