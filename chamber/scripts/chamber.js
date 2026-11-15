@@ -7,6 +7,7 @@ lastModified.textContent = document.lastModified;
 
 
 let cards = document.querySelector("#cards")
+    cards.classList.add("list-view");
 const url = "https://aejay22.github.io/wdd231/chamber/data/members.json";
 
 function displayMembers(members){
@@ -23,6 +24,7 @@ function displayMembers(members){
 
         let image = document.createElement("img");
         image.setAttribute("src", member.image);
+        image.classList.add("grid")
         image.setAttribute("alt", `image of ${member.name}`);
         image.setAttribute("loading", "lazy");
         
@@ -91,6 +93,7 @@ hamburger.addEventListener("click", ()=>{
 });
 
 const footer = document.querySelector("footer");
+footer.classList.add("list-view");
 const grid = document.querySelector("#grid");
 const list = document.querySelector("#list");
 

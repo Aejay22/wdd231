@@ -6,7 +6,7 @@
 body {
     background-color: rgb(224, 232, 232);
     width: 100%;
-    min-width: 380px;
+    min-width: 340px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -52,7 +52,7 @@ main{
 }
 #cards.grid-view{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin: .4rem 0;
     justify-content: center;
@@ -64,21 +64,24 @@ main{
     padding: .7rem;
 }
 
-.divThree{
+.grid-view .divThree{
     display: grid;
     gap: .3rem;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
-.divOne{
+.grid-view .divThree .divOne{
     grid-column: 1/2;
 }
-.divTwo{
+.grid-view .divThree .divTwo{
     grid-column: 2/4;
     overflow-wrap: anywhere;
 }
 
+.list-view .divThree .divTwo{
+    overflow-wrap: anywhere;
+}
 .divThree img{
     width: 100%;
     height: auto;
@@ -138,3 +141,10 @@ footer.list-view, #cards.list-view{
 }
 
 
+.list-view .divOne {
+    display: none;
+}
+
+.list-view .divTwo {
+    width: 100%;
+}

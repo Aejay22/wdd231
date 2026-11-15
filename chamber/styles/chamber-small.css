@@ -1,4 +1,4 @@
-@media screen and (max-width: 512px){
+@media screen and (max-width: 530px){
  
     .light-dark{
         margin-right: 1rem;
@@ -61,5 +61,31 @@
         width: 130px;
         height: auto;
     }
+    #cards.grid-view{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 2fr));
+    gap: 1rem;
+    margin: .4rem 0;
+    justify-content: center;
+    align-items: center;
+    }
+    .grid-view .divThree{
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    }
+    .grid-view .divThree .divOne{
+        grid-column: 2/3;
+    }
+    .grid-view .divThree .divTwo{
+        grid-column: 1/4;
+        overflow-wrap: anywhere;
+    }
+    .list-view .divThree .divTwo{
+        overflow-wrap: anywhere;
+    }
+
    
 }
