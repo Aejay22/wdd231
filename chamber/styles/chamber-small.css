@@ -1,4 +1,4 @@
-@media screen and (max-width: 530px){
+@media screen and (max-width: 624px){
  
     .light-dark{
         margin-right: 1rem;
@@ -25,8 +25,14 @@
         display: grid;
         grid-template-columns: 1fr auto auto;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        flex: 1 1 auto;
         text-align: center;
+    }
+    #home{
+        
+        justify-self: flex-start;
+        flex: 1 1 auto;
     }
     #home{
         grid-column: 1/2;
