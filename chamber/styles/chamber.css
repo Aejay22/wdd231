@@ -151,3 +151,6 @@ footer.list-view, #cards.list-view{
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+.menu a:hover{
+    background-color: rgb(72, 118, 86);
+}
