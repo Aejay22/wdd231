@@ -51,7 +51,6 @@ function displayMembers(members){
         url.innerHTML = `<strong>URL:</strong> `;
         url.appendChild(website);
 
-        website.href = `https://${member.url}`;
 
         section.appendChild(h2);
         section.appendChild(tagLine);
