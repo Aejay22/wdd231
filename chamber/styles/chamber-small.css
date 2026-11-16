@@ -18,7 +18,7 @@
     .hamburger-menu::before{
         content: "☰";
     }
-    .hamburger.show::before{
+    .hamburger-menu.show::before{
         content: "✕";
     }
     header{

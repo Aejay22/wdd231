@@ -5,8 +5,15 @@ let date = new Date();
 currentYear.textContent = date.getFullYear();
 lastModified.textContent = document.lastModified;
 
+let hamburger = document.querySelector(".hamburger-menu");
+let menu = document.querySelector(".menu");
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("show");
+    menu.classList.toggle("show");
+});
 
 let cards = document.querySelector("#cards")
+if (cards != null){
     cards.classList.add("list-view");
 const url = "https://aejay22.github.io/wdd231/chamber/data/members.json";
 
@@ -86,12 +93,6 @@ const getMembersCards = async (url)=>{
 
 getMembersCards(url);
 
-let hamburger = document.querySelector(".hamburger-menu");
-let menu = document.querySelector(".menu");
-hamburger.addEventListener("click", ()=>{
-    hamburger.classList.toggle("show");
-    menu.classList.toggle("show");
-});
 
 const footer = document.querySelector("footer");
 footer.classList.add("list-view");
@@ -111,4 +112,4 @@ list.addEventListener("click", () => {
     footer.classList.add("list-view");
     cards.classList.remove("grid-view");
     cards.classList.add("list-view");
-});
+});}
