@@ -67,14 +67,7 @@
         width: 130px;
         height: auto;
     }
-    #cards.grid-view{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(165px, 2fr));
-    gap: 1rem;
-    margin: .4rem 0;
-    justify-content: center;
-    align-items: center;
-    }
+    
     .grid-view .divThree{
     display: grid;
     gap: .3rem;
