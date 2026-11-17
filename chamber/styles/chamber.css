@@ -181,14 +181,14 @@ footer.list-view, #cards.list-view{
     font-size: 3.5rem;
     font-weight: bolder;
 }
-.callToAction button{
+.callToAction button, .currEvent button{
     right: 1rem;
     padding: 1rem 3rem;
     background-color: blue;
     color: white;
     border-radius: .5rem;
 }
-.callToAction button:hover{
+.callToAction button:hover, .currEvent button:hover{
     background-color: blueviolet;
 }
 .currEvent{
