@@ -85,6 +85,20 @@
     .list-view .divThree .divTwo{
         overflow-wrap: anywhere;
     }
+    .index{
+        display: flex;
+        flex-direction: column;
+    }
+    .callToAction h1{
+        font-size: large;
+        font-weight: bolder;
+    }
+    .callToAction button{
+        padding: .75rem;
 
-   
+    }
+    .spotlight{
+        display: flex;
+        flex-direction: column;
+    }
 }
