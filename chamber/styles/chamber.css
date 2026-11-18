@@ -255,3 +255,9 @@ footer.list-view, #cards.list-view{
     grid-column: 1/-1;
     text-align: center;
 }
+.menu a[aria-current="page"] {
+    background-color: #011106;
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid gold;
+}
