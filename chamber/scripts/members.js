@@ -80,7 +80,10 @@ function displayMembers(getRandomMembers){
 
 function displayWeather(weatherData){
     console.log(weatherData);
-    const dailyForecast = weatherData.list.filter(item=>item.dt_txt.includes("12:00:00"));
+    let filterer = weatherData.list[0].dt_txt;
+    let filter = filterer.split(" ");
+    console.log(filter);
+    const dailyForecast = weatherData.list.filter(item=>item.dt_txt.includes(filter[1]));
     console.log(dailyForecast);
     const firstThreeDays = dailyForecast.slice(0,4);
     console.log(firstThreeDays);
