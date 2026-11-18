@@ -259,5 +259,5 @@ footer.list-view, #cards.list-view{
     background-color: #011106;
     color: white;
     font-weight: bold;
-    border-bottom: 3px solid gold;
+    border: 3px solid gold;
 }
