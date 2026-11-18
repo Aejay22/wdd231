@@ -11,7 +11,7 @@ body {
 header, footer{
     background-color: rgb(169, 193, 183);
 }
-header{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header{
     width: 250px;
     height: auto;
 }
-header a{
+nav a{
     text-decoration: none;
     color: rgb(4, 19, 4);
 }
@@ -99,6 +99,7 @@ footer.grid-view{
 }
 footer section{
     width: fit-content;
+    margin: .75rem;
 }
 .hamburger-menu{
     display: none;
@@ -149,9 +150,7 @@ footer.list-view, #cards.list-view{
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-.menu a:hover{
-    background-color: rgb(72, 118, 86);
-}
+
 .index{
     width: 100%;
     display: grid;
@@ -177,7 +176,7 @@ footer.list-view, #cards.list-view{
     z-index: 100;
     text-align: center;
 }
-.callToAction h1{
+.callToAction h1, .callToAction h2{
     font-size: 3.5rem;
     font-weight: bolder;
 }
@@ -255,7 +254,4 @@ footer.list-view, #cards.list-view{
 .spotlight h2{
     grid-column: 1/-1;
     text-align: center;
-}
-footer section{
-    margin: .75rem;
 }

@@ -21,7 +21,7 @@
     .hamburger-menu.show::before{
         content: "✕";
     }
-    header{
+    nav{
         display: grid;
         grid-template-columns: 1fr auto auto;
         align-items: center;
@@ -89,7 +89,7 @@
         display: flex;
         flex-direction: column;
     }
-    .callToAction h1{
+    .callToAction h1, .callToAction h2{
         font-size: large;
         font-weight: bolder;
     }
