@@ -129,3 +129,8 @@ dialog button {
     width: 200px;
     height: auto;
 }
+a[aria-current="page"]{
+    color: pink;
+    background-color: brown;
+    border: rgb(118, 42, 165) 3px solid;
+}
