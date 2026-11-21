@@ -31,7 +31,7 @@
 <body>
     <header>
         <nav>
-            <a id="home" href="./index.html" aria-current="page"><img src="./images/logo.svg" alt="Timbuktu Chamber of Commerce Logo"></a>
+            <a id="home" href="./index.html" aria-current="page"><img src="./images/logo.svg" alt="Timbuktu Chamber of Commerce"></a>
             <div class="menu">
                 <a href="./index.html" >Home</a>
                 <a href="./directory.html">Directory</a>
@@ -39,18 +39,18 @@
                 <a href="#">Discover</a>
             </div>
             <a href="#" class="hamburger-menu" aria-label="Open navigation menu"></a>
-            <a href="#"><img src="../images/lightmode-darkmode.png" alt="light mode dark mode icon" class="light-dark"></a>
+            <a href="#"><img src="../images/lightmode-darkmode.png" alt="light mode dark mode" class="light-dark"></a>
         </nav>
     </header>
     <main class="join">
         
-        <form method="get" action="./thankyou.html">
+        <form method="get" action="thankyou.html">
             <h1>Membership Application Form</h1>
             <label>First Name <input type="text" required name="firstName" title="Your First Name" autocomplete="given-name" ></label>
             <label>Last Name <input type="text" required name="lastName" title="Your Last Name" autocomplete="family-name"></label>
             <label>Organization Title <input type="text" name="organizationTitle" title="Your Organization Title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}"></label>
             <label>Email <input type="email" required name="emailAddress" title="Your Email Address" autocomplete="email" placeholder="ade99@gmail.com" ></label>
-            <label>Mobile Phone Number <input type="telephone" required name="phoneNumber" title="Your Phone Number" autocomplete="tel" ></label>
+            <label>Mobile Phone Number <input type="tel" required name="phoneNumber" title="Your Phone Number" autocomplete="tel" ></label>
             <label>Business/Organization Name <input type="text" required name="businessName" title="Your Business Name" autocomplete="organization"></label>
             <label>
                 Membership level
