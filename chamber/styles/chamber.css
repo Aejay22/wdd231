@@ -355,7 +355,7 @@ input[type=submit] {
 }
 
 .join {
-    margin: 1rem aut0;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
