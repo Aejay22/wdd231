@@ -1,17 +1,30 @@
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+@keyframes fromRight {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 body {
-    background-color: rgb(224, 232, 232);
+    background-color: rgba(224, 232, 232, 1);
     width: 100%;
     margin: 0 auto;
 }
-header, footer{
-    background-color: rgb(169, 193, 183);
+
+header, footer {
+    background-color: rgba(169, 193, 183, 1);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,37 +32,43 @@ nav{
     padding: 1rem;
     text-align: center;
 }
-#home img{
+
+#home img {
     width: 250px;
     height: auto;
 }
-nav a{
+
+nav a {
     text-decoration: none;
-    color: rgb(4, 19, 4);
+    color: rgba(4, 19, 4, 1);
 }
-.light-dark, footer img{
+
+.light-dark, footer img {
     width: 3rem;
 }
-main{
+
+main {
     width: 80%;
     margin: .4px auto;
 }
-.gridList{
+
+.gridList {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem 0;
-
 }
-.gridList a{
+
+.gridList a {
     text-decoration: none;
-    color: white;
-    border: 1px solid black;
-    background-color: rgb(230, 12, 12);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgba(230, 12, 12, 1);
     padding: .3rem 1rem;
 }
-#cards.grid-view{
+
+#cards.grid-view {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -58,38 +77,43 @@ main{
     align-items: center;
 }
 
-#cards section{
-    border: 1px solid black;
+#cards section {
+    border: 1px solid rgba(0, 0, 0, 1);
     padding: .7rem;
 }
 
-.grid-view .divThree{
+.grid-view .divThree {
     display: grid;
     gap: .3rem;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
 }
-.grid-view .divThree .divOne{
+
+.grid-view .divThree .divOne {
     grid-column: 1/2;
 }
-.grid-view .divThree .divTwo{
+
+.grid-view .divThree .divTwo {
     grid-column: 2/4;
     overflow-wrap: anywhere;
 }
 
-.list-view .divThree .divTwo{
+.list-view .divThree .divTwo {
     overflow-wrap: anywhere;
 }
-.divThree img{
+
+.divThree img {
     width: 100%;
     height: auto;
 }
-hr{
+
+hr {
     width: 100%;
     margin: 10px 0;
 }
-footer.grid-view{
+
+footer.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
@@ -97,24 +121,28 @@ footer.grid-view{
     align-items: center;
     justify-content: center;
 }
-footer section{
+
+footer section {
     width: fit-content;
     margin: .75rem;
 }
-.hamburger-menu{
+
+.hamburger-menu {
     display: none;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
-.menu a{
+
+.menu a {
     margin: 1rem;
 }
-.header-links{
+
+.header-links {
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -122,21 +150,19 @@ footer section{
     text-align: center;
 }
 
-.menu a:hover{
+.menu a:hover {
     padding: 1rem;
-    background-color: rgb(72, 118, 86);
+    background-color: rgba(72, 118, 86, 1);
 }
+
 footer.list-view > section {
     margin: 1rem auto;
 }
 
-footer.list-view, #cards.list-view{
+footer.list-view, #cards.list-view {
     display: flex;
     flex-direction: column;
-    
-
 }
-
 
 .list-view .divOne {
     display: none;
@@ -145,69 +171,79 @@ footer.list-view, #cards.list-view{
 .list-view .divTwo {
     width: 100%;
 }
+
 .list-view {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.index{
+.index {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-.hero{
+
+.hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/3;
-} 
-.hero img{
+}
+
+.hero img {
     width: 100%;
     grid-column: 1/4;
     grid-row: 1/4;
     height: auto;
     opacity: .87;
 }
-.callToAction{
-    color: rgb(13, 13, 13);
+
+.callToAction {
+    color: rgba(13, 13, 13, 1);
     grid-column: 1/4;
     grid-row: 2/3;
     z-index: 100;
     text-align: center;
 }
-.callToAction h1, .callToAction h2{
+
+.callToAction h1, .callToAction h2 {
     font-size: 3.5rem;
     font-weight: bolder;
 }
-.callToAction button, .currEvent button{
+
+.callToAction button, .currEvent button {
     right: 1rem;
     padding: 1rem 3rem;
-    background-color: blue;
-    color: white;
+    background-color: rgba(0, 0, 255, 1);
+    color: rgba(255, 255, 255, 1);
     border-radius: .5rem;
 }
-.callToAction button:hover, .currEvent button:hover{
-    background-color: blueviolet;
+
+.callToAction button:hover, .currEvent button:hover {
+    background-color: rgba(138, 43, 226, 1);
 }
-.currEvent{
+
+.currEvent {
     padding: 7px 10px;
-    background-color: rgb(89, 66, 125);
+    background-color: rgba(89, 66, 125, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.weather{
+
+.weather {
     display: flex;
     flex-direction: column;
-    
 }
-.current{
+
+.current {
     display: flex;
     flex-direction: row;
 }
-.current div{
+
+.current div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,48 +252,161 @@ footer.list-view, #cards.list-view{
     flex: 1 1 auto;
 }
 
-.weatherSection{
-    
-    background-color: rgb(0, 85, 128);
+.weatherSection {
+    background-color: rgba(0, 85, 128, 1);
     padding: 1rem;
 }
-.notCurrentWeather{
+
+.notCurrentWeather {
     display: flex;
     flex-direction: row;
     gap: .4rem;
     justify-content: space-between;
 }
-.notCurrentWeather > :not(:last-child){
-    border-right: 1px solid rgb(241, 242, 234);
+
+.notCurrentWeather > :not(:last-child) {
+    border-right: 1px solid rgba(241, 242, 234, 1);
     flex: 1 1 auto;
     margin-right: 1rem;
 }
 
-.currEvent img{
+.currEvent img {
     width: 1rem;
 }
-.spotlight{
+
+.spotlight {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    background-color: rgb(238, 163, 163);
+    background-color: rgba(238, 163, 163, 1);
     padding: 1rem;
 }
-.spotlight .container{
+
+.spotlight .container {
     text-align: center;
 }
-.spotlight .container img{
+
+.spotlight .container img {
     width: 100%;
     height: auto;
 }
-.spotlight h2{
+
+.spotlight h2 {
     grid-column: 1/-1;
     text-align: center;
 }
+
 .menu a[aria-current="page"] {
-    background-color: #011106;
-    color: white;
+    background-color: rgba(1, 17, 6, 1);
+    color: rgba(255, 255, 255, 1);
     font-weight: bold;
-    border: 3px solid gold;
+    border: 3px solid rgba(255, 215, 0, 1);
+}
+
+form {
+    margin: .75rem;
+}
+
+input, textarea, form button, select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: rgba(85, 85, 85, 1);
+    font-size: 1rem;
+    color: rgba(61, 64, 91, 1);
+    width: 250px;
+}
+
+input:required, select:required {
+    border-left-color: rgba(255, 0, 0, 1);
+}
+
+input:required:valid, select:required:valid {
+    border-left-color: rgba(0, 128, 0, 1);
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: rgba(61, 64, 91, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.thankyou {
+    border: 5px solid rgba(206, 182, 182, 1);
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: rgba(204, 239, 158, 0.5);
+    max-width: 512px;
+}
+
+.join {
+    margin: 1rem aut0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form {
+    margin: 0;
+    grid-column: 1/2;
+    width: 100%;
+    border-right: 2px solid rgba(110, 106, 106, 1);
+    padding-right: .7rem;
+}
+
+.membership {
+    width: 100%;
+}
+
+.membership div {
+    margin: 1rem;
+    border: 1px solid rgba(83, 81, 81, 1);
+    padding: 1rem;
+    border-radius: 0 50px 0 50px;
+    max-width: 500px;
+    animation: fromRight 2s ease-in-out;
+}
+
+.gold {
+    background-color: rgba(255, 215, 0, 1);
+}
+
+.silver {
+    background-color: rgba(192, 192, 192, 1);
+}
+
+.bronze {
+    background-color: rgba(222, 179, 179, 1);
+}
+
+.np {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+form h1, .membership h1 {
+    padding: 1rem;
+    background-color: rgba(156, 219, 156, 1);
+}
+
+dialog {
+    margin: auto auto;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1rem;
+    max-width: 390px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }

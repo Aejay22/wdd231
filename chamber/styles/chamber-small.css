@@ -1,27 +1,31 @@
-@media screen and (max-width: 624px){
- 
-    .light-dark{
-        margin-right: 1rem;
 
+@media screen and (max-width: 624px) {
+
+    .light-dark {
+        margin-right: 1rem;
     }
-    #home img{
+
+    #home img {
         width: 120px;
     }
-    .header-links{
+
+    .header-links {
         flex-direction: row-reverse;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
-    .hamburger-menu::before{
+    .hamburger-menu::before {
         content: "☰";
     }
-    .hamburger-menu.show::before{
+
+    .hamburger-menu.show::before {
         content: "✕";
     }
-    nav{
+
+    nav {
         display: grid;
         grid-template-columns: 1fr auto auto;
         align-items: center;
@@ -29,76 +33,107 @@
         flex: 1 1 auto;
         text-align: center;
     }
-    #home{
-        
+
+    #home {
         justify-self: flex-start;
         flex: 1 1 auto;
     }
-    #home{
+
+    #home {
         grid-column: 1/2;
     }
-    .light-dark{
+
+    .light-dark {
         grid-column: 2/3;
         order: 1;
     }
-    .hamburger-menu{
+
+    .hamburger-menu {
         display: block;
         font-size: 3rem;
         grid-column: 3/4;
         order: 2;
     }
-    .menu.show{
+
+    .menu.show {
         display: block;
         grid-column: 1/4;
         order: 3;
     }
-    .menu.show a{
+
+    .menu.show a {
         display: block;
-        background-color: rgb(94, 114, 96);
-        color: rgb(30, 31, 29);
+        background-color: rgba(94, 114, 96, 1);
+        color: rgba(30, 31, 29, 1);
         margin: .3rem;
         padding: .7rem;
         border-radius: 1rem;
     }
-    .menu.show a:hover{
-        background-color: rgb(72, 118, 86);
+
+    .menu.show a:hover {
+        background-color: rgba(72, 118, 86, 1);
     }
-    .img{
+
+    .img {
         width: 130px;
         height: auto;
     }
-    
-    .grid-view .divThree{
-    display: grid;
-    gap: .3rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
+
+    .grid-view .divThree {
+        display: grid;
+        gap: .3rem;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
     }
-    .grid-view .divThree .divOne{
+
+    .grid-view .divThree .divOne {
         grid-column: 2/3;
     }
-    .grid-view .divThree .divTwo{
+
+    .grid-view .divThree .divTwo {
         grid-column: 1/4;
         overflow-wrap: anywhere;
     }
-    .list-view .divThree .divTwo{
+
+    .list-view .divThree .divTwo {
         overflow-wrap: anywhere;
     }
-    .index{
+
+    .index {
         display: flex;
         flex-direction: column;
     }
-    .callToAction h1, .callToAction h2{
+
+    .callToAction h1, .callToAction h2 {
         font-size: large;
         font-weight: bolder;
     }
-    .callToAction button{
-        padding: .75rem;
 
+    .callToAction button {
+        padding: .75rem;
     }
-    .spotlight{
+
+    .spotlight {
         display: flex;
         flex-direction: column;
+    }
+
+    .join {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        border-right: 0px;
+    }
+
+    @keyframes fromRight {
+        from {
+            transform: translateX(300px);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 }
