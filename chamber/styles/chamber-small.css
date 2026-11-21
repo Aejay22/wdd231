@@ -122,10 +122,16 @@
     .join {
         display: flex;
         flex-direction: column;
+        background-color: transparent;
+        padding: 0;
+        border: 0px;
+
     }
 
-    form {
-        border-right: 0px;
+    form, .membership {
+        border: 1px solid rgb(21, 21, 21, 1);
+        padding: 1rem;
+        background-color: rgba(216, 231, 244, 1);
     }
 
     @keyframes fromRight {
