@@ -8,7 +8,7 @@ const form = document.querySelector("form");
 
     const lastName = info.get("lastName");
     const email = info.get("emailAddress");
-    const phone = info.get("phone number");
+    const phone = info.get("phoneNumber");
     const businessName = info.get("businessName");
     const membershipLevel = info.get("membership");
 
