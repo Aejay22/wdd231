@@ -364,7 +364,7 @@ input[type=submit] {
     gap: 1rem;
     border: 1px solid black;
     padding: .9rem;
-    background-color: rgb(255, 241, 241);
+    background-color: rgb(255, 241, 241, 1);
 }
 
 
